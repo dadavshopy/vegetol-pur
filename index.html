@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Végétol Pur - Boutique Officielle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Végétol Pur</h1>
+        <nav>
+            <a href="#produits">Produits</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="produits">
+            <h2>Nos Produits</h2>
+            <div class="product" data-price="6.9">100ml – 6,90€ <button onclick="addToCart('100ml', 6.9)">Ajouter</button></div>
+            <div class="product" data-price="10.9">250ml – 10,90€ <button onclick="addToCart('250ml', 10.9)">Ajouter</button></div>
+        </section>
+        <section id="panier">
+            <h2>Votre Panier</h2>
+            <ul id="cart-items"></ul>
+            <p>Total : <span id="total">0</span>€</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="https://formsubmit.co/dadavshopy@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Nom complet" required><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <textarea name="message" placeholder="Votre message" required></textarea><br>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
